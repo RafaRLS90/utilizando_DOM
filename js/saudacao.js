@@ -1,8 +1,26 @@
 (function(){
-    const nomeUsuario = "Rafael"
-    //document.querySelector(".top-bar p").textContent = "Bem vindo(a), " + nomeUsuario;
+    const nomeUsuario = null
     const elemento = document.querySelector(".top-bar p")
-    console.log(elemento.textContent)
+    //document.querySelector(".top-bar p").textContent = "Bem vindo(a), " + nomeUsuario;
+   
+    if (nomeUsuario) {
+        console.log(elemento.textContent)
     //elemento.textContent = elemento.textContent + nomeUsuario
     elemento.innerHTML += "<b>" + nomeUsuario + "</b>" // renderizar meu texto para html
+    } else {
+        //elemento.parentElement.style.display = "none"
+        //A linha acima tem como comando deixar o elemento invisivel para o usuário, fazendo com que ele não veja na tela. Mas ainda existe
+       // elemento.remove() //paragrafo do DOM removido
+       const elementoParaRemover = elemento.parentElement
+       elementoParaRemover.parentElement.removeChild(elementoParaRemover)
+    }
+    console.log(elemento)
 })()
+
+(function (){
+    const nomeUsuario2 = "Rafael"
+
+    if(nomeUsuario2) {
+        const topBarElemento = document.creat
+    }
+})
