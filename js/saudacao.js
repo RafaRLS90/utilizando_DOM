@@ -1,6 +1,6 @@
 (function(){
     const nomeUsuario = "Rafael"
-    const elemento = document.querySelector(".top-bar p")
+    //const elemento = document.querySelector(".top-bar p")
     //document.querySelector(".top-bar p").textContent = "Bem vindo(a), " + nomeUsuario;
    
    /* if (nomeUsuario) {
@@ -25,8 +25,8 @@
         topBarElemento.className = "tob-bar"
         topBarElemento.innerHTML = `<p> Olá, <b> ${nomeUsuario}</b></p>`
         
-        const elementoPai = document.querySelector("hero")
+        const elementoPai = document.querySelector(".hero")
         elementoPai.insertBefore(topBarElemento, elementoPai.firstElementChild)
-        
+
     }
-})
+})()
