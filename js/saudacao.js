@@ -1,9 +1,9 @@
 (function(){
-    const nomeUsuario = null
+    const nomeUsuario = "Rafael"
     const elemento = document.querySelector(".top-bar p")
     //document.querySelector(".top-bar p").textContent = "Bem vindo(a), " + nomeUsuario;
    
-    if (nomeUsuario) {
+   /* if (nomeUsuario) {
         console.log(elemento.textContent)
     //elemento.textContent = elemento.textContent + nomeUsuario
     elemento.innerHTML += "<b>" + nomeUsuario + "</b>" // renderizar meu texto para html
@@ -17,10 +17,16 @@
     console.log(elemento)
 })()
 
-(function (){
-    const nomeUsuario2 = "Rafael"
+//*(function (){
+    //const nomeUsuario2 = "Rafael"*/
 
-    if(nomeUsuario2) {
-        const topBarElemento = document.creat
+    if(nomeUsuario) {
+        const topBarElemento = document.createElement("div")
+        topBarElemento.className = "tob-bar"
+        topBarElemento.innerHTML = `<p> Olá, <b> ${nomeUsuario}</b></p>`
+        
+        const elementoPai = document.querySelector("hero")
+        elementoPai.insertBefore(topBarElemento, elementoPai.firstElementChild)
+        
     }
 })
