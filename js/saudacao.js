@@ -38,3 +38,21 @@
         let email = txtEmail.value //email = "" elemento vazio
         msgFeedback.innerHTML = `O email ${email} foi cadastrado com sucesso!`
     }
+
+    //parte do contrato
+    const btn = document.querySelector('form input[type="submit"]')
+    btn.disabled = true
+    
+    function enableOrDisableButton(){
+        const contrato = document.querySelector("#contrato")
+       
+        let checked = contrato.checked
+        console.log(checked)
+
+       /* if (checked) {
+            btn.disabled = false
+        } else {
+            btn.disebled = true
+        } isso é a mesma coisa da linha abaixo*/
+        btn.disabled = !checked
+    }

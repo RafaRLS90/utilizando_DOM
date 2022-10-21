@@ -133,3 +133,22 @@ main{
 	background: #6b6c68;
     line-height: 80px;
 }
+
+.parte-contrato{
+    /*background-position: right center;
+    background-size: cover;
+    border-top: 2px solid tr
+    background-color: #393535;*/
+    height: 10px;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	text-shadow: 2px 2px 2px black;
+	background: #6b6c68;
+    line-height: 40px;
+}
+
+.botao-cad{
+    background:#2D1E94 ;
+    color:white;
+}
