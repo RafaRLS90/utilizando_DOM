@@ -149,6 +149,10 @@ main{
 }
 
 .botao-cad{
-    background:#2D1E94 ;
+    background:#A020F0;
     color:white;
+}
+
+.txt-csl{
+    font-family: arial, sans-serif;
 }
