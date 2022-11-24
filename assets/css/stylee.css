@@ -43,8 +43,18 @@ header {
     margin: 0 15px;
 }
 
-.login-button {
+.login-button button{
+    border: none;
+    background-color: darkmagenta;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
 
+.login-button button a {
+    text-decoration: none;
+    color: chocolate;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 .nav-link {
